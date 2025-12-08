@@ -1,7 +1,7 @@
 class Kubecfg < Formula
   desc "A fast, secure CLI tool for managing Kubernetes kubeconfig files"
   homepage "https://github.com/kadirbelkuyu/kubecfg"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
