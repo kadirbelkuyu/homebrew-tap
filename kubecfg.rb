@@ -5,21 +5,21 @@
 class Kubecfg < Formula
   desc "A fast, secure CLI tool for managing Kubernetes kubeconfig files"
   homepage "https://github.com/kadirbelkuyu/kubecfg"
-  version "0.0.6"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.0.6/kubecfg_0.0.6_darwin_amd64.tar.gz"
-      sha256 "70ec87f42ef6da8b804cdf5dd3cf38816a1f7d26be7d479c4273a17f79ccc095"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.1.0/kubecfg_0.1.0_darwin_amd64.tar.gz"
+      sha256 "352ac613a98f6f600f77266114cc17db0fa65f5389986674a2ce7dd56c305577"
 
       def install
         bin.install "kubecfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.0.6/kubecfg_0.0.6_darwin_arm64.tar.gz"
-      sha256 "73ec2bd4266332af61c4b6835934f1d140562171d99fe47fdccc4f76cfb35b6c"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.1.0/kubecfg_0.1.0_darwin_arm64.tar.gz"
+      sha256 "579bef0baf4b7f1e0f8111075da1ec459e4c3c55fae8ba0da24a21e13a0d7929"
 
       def install
         bin.install "kubecfg"
@@ -29,15 +29,15 @@ class Kubecfg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.0.6/kubecfg_0.0.6_linux_amd64.tar.gz"
-      sha256 "44877e0b7d827159b14de39810375b4c6b94256544cee5d1f6b3f36cb4c8153f"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.1.0/kubecfg_0.1.0_linux_amd64.tar.gz"
+      sha256 "6b010e3e1d6ea1a643fd735e40f34496996f7df0ecb2597158654f646e349891"
       def install
         bin.install "kubecfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.0.6/kubecfg_0.0.6_linux_arm64.tar.gz"
-      sha256 "0c1f06644314f896ae487817cdcffe9dbfbc24c4c10120d3281d57df0530b919"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.1.0/kubecfg_0.1.0_linux_arm64.tar.gz"
+      sha256 "dfe6c3ebe1baa0dbf12b40cb2b227010a81cba86ab0f6dbee26b5badba359fec"
       def install
         bin.install "kubecfg"
       end
