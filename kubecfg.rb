@@ -5,21 +5,21 @@
 class Kubecfg < Formula
   desc "A fast, secure CLI tool for managing Kubernetes kubeconfig files"
   homepage "https://github.com/kadirbelkuyu/kubecfg"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.1/kubecfg_0.2.1_darwin_amd64.tar.gz"
-      sha256 "6e266ee03e8232fba4862cb7c2cabe29597b5accd06b81d1c155de8e474bb82e"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.2/kubecfg_0.2.2_darwin_amd64.tar.gz"
+      sha256 "994d747d5337b961e57cb2429d75321c9379b4a52e47776e0c04fde728d55be4"
 
       define_method(:install) do
         bin.install "kubecfg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.1/kubecfg_0.2.1_darwin_arm64.tar.gz"
-      sha256 "179c8fe484a4414d2157dcbf1363eacef933248b367687e88583fcf329273c9f"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.2/kubecfg_0.2.2_darwin_arm64.tar.gz"
+      sha256 "caba204ec1ae958f6882a97117e103c8f1b490e3531adcd40d1bf9308b3b900f"
 
       define_method(:install) do
         bin.install "kubecfg"
@@ -29,15 +29,15 @@ class Kubecfg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.1/kubecfg_0.2.1_linux_amd64.tar.gz"
-      sha256 "f9cbc6910a307433b6b86dea51f6c4424aaac71e52b8859699bb7b7886b2ac10"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.2/kubecfg_0.2.2_linux_amd64.tar.gz"
+      sha256 "7db51563883ad05f138f0c23ac67239f9bf55f4d099ded46a76b8fe48019ce5b"
       define_method(:install) do
         bin.install "kubecfg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.1/kubecfg_0.2.1_linux_arm64.tar.gz"
-      sha256 "80a8c99d716dd5963f08e165eb8cb28947a4fb4acdba99f565acd3a58b0a346d"
+      url "https://github.com/kadirbelkuyu/kubecfg/releases/download/v0.2.2/kubecfg_0.2.2_linux_arm64.tar.gz"
+      sha256 "4805c72b83b2fc696507cf1760f844691ffef91466176b315a3c500b04c48d00"
       define_method(:install) do
         bin.install "kubecfg"
       end
